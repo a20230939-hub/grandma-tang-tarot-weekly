@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>湯婆婆塔羅｜每週塔羅指引 5/18–5/24</title>
+<link rel="stylesheet" href="weekly_style.css"/>
+</head>
+<body>
+<div class="star-layer"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">湯婆婆塔羅｜每週指引</a>
+  <a class="nav-cta" href="https://lin.ee/Z5rIjNT" target="_blank" rel="noopener">私訊婆婆 →</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-aurora"></div>
+  <div class="hero-logo-wrap">
+    <img class="hero-logo" src="weekly_logo.png" alt="grandma.tang.tarot"/>
+  </div>
+  <div class="hero-eyebrow">grandma.tang.tarot</div>
+  <h1 class="hero-title">
+    <span class="t1">每週塔羅指引</span>
+    <span class="t2">5 / 1 8 &nbsp;–&nbsp; 5 / 2 4</span>
+  </h1>
+  <p class="hero-tagline">選一張，看見這週妳需要知道的事</p>
+  <div class="hero-btns">
+    <a class="btn-outline" href="#weekly">選牌 →</a>
+  </div>
+  <div class="hero-scroll"><div class="hero-scroll-line"></div></div>
+</section>
+
+<!-- WEEKLY ORACLE -->
+<section id="weekly">
+  <div class="si c fade-in">
+    <span class="s-eyebrow">本週指引 · 5/18–5/24</span>
+    <h2 class="s-title">選一張讓妳停下來的牌</h2>
+    <div class="s-rule c"></div>
+
+    <!-- 封面照片 -->
+    <div class="weekly-cover-wrap">
+      <img src="weekly_cover.jpg" alt="本週三張牌"/>
+    </div>
+
+    <!-- A / B / C 按鈕 -->
+    <p class="weekly-pick-hint">✦ 點選妳有感覺的那張</p>
+    <div class="pick-btns">
+      <button class="pick-btn" data-id="a" onclick="pickCard('a')">A</button>
+      <button class="pick-btn" data-id="b" onclick="pickCard('b')">B</button>
+      <button class="pick-btn" data-id="c" onclick="pickCard('c')">C</button>
+    </div>
+
+    <!-- 翻牌動畫 -->
+    <div class="flip-reveal" id="flip-reveal">
+      <div class="flip-card-wrap">
+        <div class="flip-card-inner" id="flip-inner">
+          <div class="flip-face back">
+            <img src="weekly_cover.jpg" alt="牌背"/>
+          </div>
+          <div class="flip-face front">
+            <img id="flip-front-img" src="" alt="牌面"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 解析結果 -->
+    <div class="week-result-box" id="week-result-box">
+      <div class="r-week-tag" id="r-tag"></div>
+      <div class="r-week-period" id="r-period"></div>
+      <div class="r-week-title" id="r-title"></div>
+      <div class="r-week-divider"></div>
+      <div class="r-week-body" id="r-body"></div>
+      <div class="r-week-tip" id="r-tip"></div>
+      <span class="r-week-reset" id="r-week-reset">↺ 換一張</span>
+    </div>
+
+    <!-- CTA -->
+    <div class="weekly-cta-card" id="weekly-cta-card">
+      <div class="weekly-cta-emoji">🔮</div>
+      <div class="weekly-cta-title">這週的牌有說中妳嗎？</div>
+      <div class="weekly-cta-sub">想聊得更深、或是有個問題一直放在心裡<br>歡迎私訊婆婆</div>
+      <div class="weekly-cta-btns">
+        <a class="btn-pm" href="https://lin.ee/Z5rIjNT" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.07 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>&nbsp;私訊婆婆 →</a>
+        <button class="btn-ghost-sm" onclick="resetCard()">↺ 換一張</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="orn"><span>✦ ✦ ✦</span></div>
+
+<!-- TESTIMONIALS -->
+<section id="testi">
+  <div class="si c fade-in">
+    <span class="s-eyebrow">占卜好評見證</span>
+    <h2 class="s-title">她們說</h2>
+    <p class="s-sub">真實回饋，來自每一次診斷之後的對話</p>
+    <div class="s-rule c"></div>
+  </div>
+  <div class="si"><div class="testi-grid" id="testi-grid"></div></div>
+</section>
+
+<div class="orn"><span>✦ ✦ ✦</span></div>
+
+<!-- PLANS -->
+<section id="plans">
+  <div class="si c fade-in">
+    <span class="s-eyebrow">婆婆相談室</span>
+    <h2 class="s-title">想聊得更深？</h2>
+    <div class="s-rule c"></div>
+  </div>
+  <div class="si">
+    <div class="plans-grid" style="max-width:460px;margin:0 auto;">
+      <div class="plan-card glass-pearl featured fade-in" style="text-align:center;">
+        <div class="plan-badge">💕 520 限定</div>
+        <div class="plan-tag">INITIAL READING</div>
+        <div class="plan-name">初次解析</div>
+        <div class="plan-core">第一次體驗｜看清現在這件事的核心與方向</div>
+        <div class="plan-price"><strong>$200</strong><span class="plan-promo">520 加碼</span></div>
+        <div class="plan-hr"></div>
+        <ul class="plan-list" style="text-align:left;">
+          <li><strong>抓出問題核心</strong></li>
+          <li><strong>告訴你下一步方向</strong></li>
+          <li><strong>24hr 內回覆</strong></li>
+          <li>✦ <strong>520 限定：追問 1次→2次</strong></li>
+          <li style="color:var(--rose);font-size:12px;">名額限定 8 名｜額滿為止</li>
+        </ul>
+        <div class="plan-hr"></div>
+        <div style="text-align:left;margin-bottom:1.25rem;">
+          <div style="font-family:'Cinzel',serif;font-size:10px;color:var(--rose);letter-spacing:.2em;margin-bottom:.75rem;">核心問題範例</div>
+          <div style="font-size:12.5px;color:var(--tx2);line-height:2;">
+            💕 他現在對我的心意是什麼？<br>
+            💕 這段關係還有沒有繼續的可能？<br>
+            💕 我該主動還是繼續等？<br>
+            💕 這個人適不適合我認真？<br>
+            💼 我現在該繼續撐還是離職？<br>
+            💼 這個機會值不值得嘗試？<br>
+            💼 我最近為什麼一直卡關？<br>
+            🌿 我一直重複同樣的困境，問題出在哪？<br>
+            🌿 我現在最需要看見什麼？
+          </div>
+        </div>
+        <a class="plan-btn" href="https://lin.ee/Z5rIjNT" target="_blank">私訊婆婆預約 →</a>
+      </div>
+    </div>
+    <p class="plan-upgrade" style="margin-top:1.5rem;">不用整理，講重點就好 ♥<br><em>私訊告訴婆婆妳現在的狀況就好</em></p>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section id="flow">
+  <div class="si c fade-in">
+    <span class="s-eyebrow">預約流程</span>
+    <h2 class="s-title">三步驟，開始改變</h2>
+    <div class="s-rule c"></div>
+  </div>
+  <div class="si">
+    <div class="flow-grid">
+      <div class="flow-step glass-pearl fade-in"><div class="flow-num">01</div><div class="flow-icon">💬</div><div class="flow-title">私訊婆婆</div><div class="flow-text">透過 LINE 聯繫，領取診斷表單，告訴婆婆妳的現狀。</div></div>
+      <div class="flow-step glass-pearl fade-in"><div class="flow-num">02</div><div class="flow-icon">📋</div><div class="flow-title">完成付款</div><div class="flow-text">填寫生日與狀況，完成付款後進入排程。</div></div>
+      <div class="flow-step glass-pearl fade-in"><div class="flow-num">03</div><div class="flow-icon">📩</div><div class="flow-title">收件複盤</div><div class="flow-text">24小時內收到報告，開始改變。</div></div>
+    </div>
+    <div class="notice-box glass-pearl fade-in">
+      <div class="notice-title">服務規約 · 請在預約前閱讀</div>
+      <div class="notice-text">所有諮詢嚴格保密，保障您的隱私。服務時間：10:00–22:00（深夜訊息翌日處理）。<br><br><span class="reject">恕不受理：投資賭博、醫療診斷、違法犯罪、法律判決、不願面對真相者。</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="orn"><span>✦ ✦ ✦</span></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="si fade-in">
+    <span class="s-eyebrow">常見問題</span>
+    <h2 class="s-title">妳可能想問的</h2>
+    <div class="s-rule"></div>
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-q">塔羅能預測未來嗎？<span class="faq-icon">+</span></div><div class="faq-a">塔羅不預測固定的命運，它呈現的是妳現在的能量狀態和可能的發展方向。結果會隨著妳的選擇和行動而改變——這也是為什麼診斷室的定位是「找回主導權的工具」，而不是讓妳等命運的東西。</div></div>
+      <div class="faq-item"><div class="faq-q">什麼樣的問題適合來診斷？<span class="faq-icon">+</span></div><div class="faq-a">感情、職涯方向、人際關係、重要決策、內在狀態……任何讓妳感到困惑、糾結或找不到方向的事情都可以。不需要把問題想得很「嚴肅」，妳的日常困惑都值得被認真看待。</div></div>
+      <div class="faq-item"><div class="faq-q">生命靈數是什麼？怎麼幫助我？<span class="faq-icon">+</span></div><div class="faq-a">生命靈數是用妳的出生年月日推算出的數字，代表妳這一生的核心能量和今年的流年主題。把它加入塔羅解讀，可以看見妳目前處在哪個能量週期——讓解讀更有脈絡，而不只是一張牌的快照。</div></div>
+      <div class="faq-item"><div class="faq-q">我不相信塔羅，來了有用嗎？<span class="faq-icon">+</span></div><div class="faq-a">不需要相信。很多個案是抱著「試試看」或「好奇」的心情來的。塔羅的解讀是一面鏡子，它能反映什麼對妳有用，取決於妳是否願意誠實面對那些問題——跟「信不信」關係不大。</div></div>
+      <div class="faq-item"><div class="faq-q">24小時內真的能交付嗎？<span class="faq-icon">+</span></div><div class="faq-a">是的。在妳的資料和付款確認齊全之後，24小時內交付解析報告。服務時間為 10:00–22:00，深夜收到的訊息會在翌日優先處理。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta">
+  <div class="cta-inner fade-in">
+    <span class="cta-eyebrow">✦ 這週的牌說中妳了嗎 ✦</span>
+    <h2 class="cta-title">想聊得更深<br>帶著妳現在最困惑的那件事</h2>
+    <p class="cta-sub">不用整理，講重點就好<br>婆婆在這裡。</p>
+    <a class="btn-primary" href="https://lin.ee/Z5rIjNT" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.07 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>&nbsp;私訊婆婆 →</a>
+    <p class="cta-hours">服務時間：10:00 – 22:00 ｜ 深夜訊息翌日處理</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 湯婆婆塔羅 · <a href="https://www.instagram.com/grandma.tang.tarot" target="_blank">@grandma.tang.tarot</a> · 所有諮詢內容嚴格保密</p>
+</footer>
+
+<script src="weekly_script.js"></script>
+</body>
+</html>
